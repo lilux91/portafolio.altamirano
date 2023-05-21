@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">LA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Yo.jpg" alt="">
+            </div>
+            <h1>LILIANA ALTAMIRANO</h1>
+            <h2>Desarrolladora Web Full Stack</h2>
+            <div class="redes">
+                <a href="https://twitter.com/AltamiranoLilii" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/liliana-altamirano-77b4561ab/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/lilux91" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion text-justify">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Liliana Altamirano </span>
+
+                Desarrolladora Web Full Stack y Ciencias de la Computación.
+                Actualmente, estoy
+                en proceso de transición profesional y me encuentro emocionada por comenzar mi carrera en el campo de la
+                tecnología.
+
+                He completado cursos en HTML, CSS, JavaScript, React.Js, Node.Js y Git en los últimos nueve
+                meses, así como capacitaciones en redes sociales y comunicación expresión y comprensión escrita de
+                Accenture. Mi habilidad para comunicarme de manera efectiva y mi atención al detalle son conocidas. Me
+                encanta trabajar en equipo y resolver problemas comerciales complejos. Estoy ansiosa por obtener
+                experiencia demostrable en diseño y creación y estoy emocionada de aceptar cualquier desafío que se me
+                presente.
+                <br> Si está interesado en discutir cómo puedo contribuir a su equipo, no dude en ponerse en
+                contacto conmigo.
+                <br>
+                Gracias por su consideración!
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Email</strong>
+                            lilualtamiran@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descargar CV -->
+        <a href="assets/cv_altamirano_liliana.pdf" class="cv" download>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <!-- Technical Skill -->
+            <div class="col">
+                <h3>Technical Skills</h3>
+
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>89%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>React.Js</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>72%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Node.Js</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Git</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Professional Skills -->
+            <div class="col">
+                <h3>Professional Skills</h3>
+                <div class="skill">
+                    <span>Comunicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>78%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Trabajo en Equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Creatividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>99%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Dedicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Proyect Management</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>94%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollador Web Full Stack (graduada)</h4>
+                        <span class="casa">Academlo - Academia de Ciencias de la Computación e Informática</span>
+                        <span class="fecha">2022 - 2023</span>
+
+
+
+
+                        <li class="tema 1">
+                            Fundamentos de Desarrollo Web:
+                            <ul>
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>Diseño web responsivo</li>
+                                <li>Fundamentos de UX/UI</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Desarrollo de Aplicaciones Web con React.Js:
+                            <ul>
+                                <li>Componentes de React</li>
+                                <li>Enrutamiento y manejo de estados</li>
+                                <li>Integración de API's</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Back-End Node.Js:
+                            <ul>
+                                <li>Node.js y Express</li>
+                                <li>Base de datos y persistencia de datos</li>
+                                <li>Autenticación y autorización</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Full Stack Web Development:
+                            <ul>
+                                <li>Integración de Front-End y Back-End</li>
+                                <li>Deploy y manejo de proyectos</li>
+                                <li>Metodologías ágiles de desarrollo</li>
+                            </ul>
+                        </li>
+
+
+                        <p>
+                            <br>
+                            He obtenido una formación completa y sólida en el ámbito de Desarrollo Web Full Stack, lo
+                            cual te permite tener habilidades en tanto Front-End como Back-End, así como conocimientos
+                            para integrar ambos.
+                        </p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tramo Pedagógico Nivel Medio</h4>
+                        <span class="casa">Universidad Del Este (La Plata) </span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Completé con éxito el Tramo de Formación Pedagógica de nivel medio, el cual brinda
+                            capacitación y actualización en la práctica docente de acuerdo con las demandas actuales.
+                            Este programa de post-título ofrece una formación rigurosa en el campo profesional y permite
+                            regularizar la situación laboral de los técnicos y profesionales de diferentes áreas en el
+                            campo educativo. Este tramo reconoce la importancia de una mirada pedagógica en la enseñanza
+                            y la complejidad de una buena práctica docente. La implementación de este tramo refleja la
+                            necesidad de una formación y capacitación permanente para el trabajo docente en realidad
+                            cada vez más complejas y violentas, y asume el compromiso de enseñar para que todos aprendan
+                            y produzcan conocimiento para transformar el mundo con justicia.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <!-- <h4>Tecnicatura Superior en Quimica</h4>
+                        <span class="casa">Universidad Nacional General Sarmiento</span>
+                        <span class="fecha">2006 - 2023</span>
+                        <p>Actualmente cursando formación en:
+                            <br>
+                            - Organización, realización, interpretación y documentación de análisis y ensayos físicos,
+                            químicos y microbiológicos en materias primas, agua, productos intermedios y/o elaborados,
+                            efluentes y emisiones.
+                            <br>
+                            - Operaciones básicas y de control de procesos físicos, químicos y microbiológicos.
+                            <br>
+                            - Adaptación de protocolos de análisis y control y procesos de fabricación de productos.
+                            <br>
+                            - Selección de procedimientos y/o métodos adecuados según requerimientos técnicos y
+                            normativa correspondiente.
+                            <br>
+                            - Elaboración de documentación técnica y cumplimiento de normas de buenas prácticas de
+                            laboratorio y manufactura, seguridad y ambientales.
+                        </p> -->
+                        <!-- <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <!--<h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrolladora Web Full Stack</h4>
+                        <span class="casa">Academlo </span>
+                        <span class="fecha">2022- 2023 </span>
+                        <p>
+                        </p> 
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div> 
+                </div> -->
+                    <div class="item der">
+                        <h4>Tecnicatura Superior en Qumíca</h4>
+                        <span class="casa">Universidad Nacional General Sarmiento</span>
+                        <span class="fecha">2006 - 2023</span>
+                        <p>Actualmente cursando formación en:
+                            <br>
+                            - Organización, realización, interpretación y documentación de análisis y ensayos físicos,
+                            químicos y microbiológicos en materias primas, agua, productos intermedios y/o elaborados,
+                            efluentes y emisiones.
+                            <br>
+                            - Operaciones básicas y de control de procesos físicos, químicos y microbiológicos.
+                            <br>
+                            - Adaptación de protocolos de análisis y control y procesos de fabricación de productos.
+                            <br>
+                            - Selección de procedimientos y/o métodos adecuados según requerimientos técnicos y
+                            normativa correspondiente.
+                            <br>
+                            - Elaboración de documentación técnica y cumplimiento de normas de buenas prácticas de
+                            laboratorio y manufactura, seguridad y ambientales.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p> -->
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div id="pokeApi" class="proyecto">
+                    <img src="img/poke.PNG" alt="">
+                    <div class="overlay">
+                        <h3>PokeApi</h3>
+                        <p>Obtener información de Pokémon a través de una solicitud externa en React.JS
+                            El frontend se implementó como una API RESTful en React.JS</p>
+                    </div>
+                </div>
+                <div id="rick" class="proyecto">
+                    <img src="img/rick.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Rick & Morty</h3>
+                        <p>Se utilizo la API de Rick and Morty para extraer
+                            información de los personajes y se agregó
+                            un buscador de ID para mejorar la experiencia del usuario</p>
+                    </div>
+                </div>
+                <div id="clima" class="proyecto">
+                    <img src="img/weather.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Clima</h3>
+                        <p>Se debe habilitar ubicación para poder visualizar el clima de su ciudad en la App. Se
+                            construyo en React.Js renderizando una API datos externos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/maps.png" alt="ubicacion">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Tigre, Buenos Aires, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +549 112666-8179
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: lilualtamiran@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://twitter.com/AltamiranoLilii" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/liliana-altamirano-77b4561ab/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/lilux91"><i class="fa-brands fa-github" target="_blank"></i></a>
+        </div>
+
+        <p>Todos los derechos reservados - 2023</p>
+        <h5>Liliana Altamirano</h5>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
