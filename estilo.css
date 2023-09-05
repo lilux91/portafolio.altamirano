@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -9,6 +11,7 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -219,7 +222,38 @@ html{
     text-decoration: none;
 }
 
-/* SECCION S K I L L S */
+/* SECCION  S K I L L S */
+#skills i {
+    text-align: center;
+    box-sizing: border-box;
+    color:#d82ac1;
+    padding: 5rem;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+    border-radius: 100%;
+    font-size: 4rem;
+    border-radius: 100%;
+}
+
+
+#skills i:hover {
+    background-color: #d82ac1;
+    color: #fff;
+}
+
+#skills i:active {
+    transform: scale(0.9);
+}
+
+#skills i:hover {
+    background-color: #d82ac1;
+    color: #fff;
+}
+
+
+
+/*2parte*/
+
 .skills{
     background-color: #252A2E;
     color: #fff;
@@ -738,4 +772,38 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+}
+
+
+/*Animacion*/
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-color: #ccc #0000;
+    animation: l16 1s infinite linear;
+}
+.loader::before,
+.loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+}
+.loader::before {
+    border-color: #f03355 #0000;
+    animation: inherit; 
+    animation-duration: .5s;
+    animation-direction: reverse;
+}
+.loader::after {
+    margin: 8px;
+    }
+    @keyframes l16 { 
+    100%{transform: rotate(1turn)}
 }
