@@ -778,7 +778,7 @@ footer .arriba{
 /*Animacion*/
 
 /* HTML: <div class="loader"></div> */
-.loader {
+/* .loader {
     width: 50px;
     aspect-ratio: 1;
     display: grid;
@@ -806,4 +806,4 @@ footer .arriba{
     }
     @keyframes l16 { 
     100%{transform: rotate(1turn)}
-}
+} */
